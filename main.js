@@ -69,5 +69,31 @@
             productDiv.appendChild(productPrice);
             productsContainer.appendChild(productDiv);
         });
-let sign = prompt("Que operacion quiere hacer, Suma, resta, division, Concatenacion, porcentajes");
-console.log(sign)
+let operacion = prompt("Que operacion quiere hacer, suma, resta, division, Concatenacion, porcentajes");
+console.log(operacion)
+if (operacion == "suma"){
+    let n1 = Number(prompt("Dijite un numero"))
+    let n2 = Number(prompt ("Dijete nuevamente un numero"))
+    function suma(a, b) {
+        return a + b;
+    }
+    var resultadoSuma = suma(n1, n2);
+    alert(resultadoSuma)
+} else if (operacion == "resta"){
+    let n1 = Number(prompt("Dijite un numero"))
+    let n2 = Number(prompt("Dijite nuevamente un numero"))
+    function resta(a, b){
+        return a - b;
+    }
+    var resultadoresta = resta(n1, n2)
+    alert(resultadoresta)
+}
+  else if (operacion == "division"){
+    let n1 = Number(prompt("Dijite un numero"))
+    let n2 = Number(prompt("Dijite nuevamente un numero"))
+    function division(a, b){
+        return a - b;
+    }
+    var resultadodivision = division(n1, n2)
+    alert(resultadodivision)
+}
