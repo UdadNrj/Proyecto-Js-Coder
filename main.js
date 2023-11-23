@@ -69,6 +69,15 @@
             productDiv.appendChild(productPrice);
             productsContainer.appendChild(productDiv);
         });
+
+            let n1 = String(prompt("Dijite su nombre"))
+            let n2 = String(prompt("Dijite su apellido"))
+            function name(a, b){
+                return a + " " + b;
+            }
+            var resultadoresta = name(n1, n2)
+            alert(resultadoresta)
+
 let operacion = prompt("Que operacion quiere hacer, suma, resta, division, Concatenacion, porcentajes");
 console.log(operacion)
 if (operacion == "suma"){
